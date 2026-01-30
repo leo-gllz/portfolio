@@ -3,52 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Développeur Informatique</title>
+    <title>Portfolio - Léo Guillez</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #e0e0e0; background: #121212; max-width: 900px; margin: auto; padding: 40px; }
-        h1, h2 { color: #00adb5; }
-        .section { background: #1e1e1e; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #00adb5; }
-        .tag { background: #393e46; color: #00adb5; padding: 4px 10px; border-radius: 5px; font-size: 0.9em; font-weight: bold; margin-right: 5px; }
-        ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 15px; }
+        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f4f4f4; }
+        header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px; }
+        section { background: white; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }
+        .tag { background: #e74c3c; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; margin-right: 5px; }
+        .project-list { list-style: none; padding: 0; }
+        .project-item { margin-bottom: 15px; }
     </style>
 </head>
 <body>
-    <h1>Portfolio de Développement</h1>
 
-    <div class="section">
-        <h2>🚀 Projets Scolaires</h2>
-        <ul>
-            <li>
-                <strong>Simulation de particules</strong> <span class="tag">Go</span>
-                <p>Conception et réalisation d'un environnement complet de simulation de particules[cite: 6].</p>
-            </li>
-            <li>
-                <strong>Jeu de la vie</strong> <span class="tag">Python</span>
-                <p>Développement de l'automate cellulaire de Conway en Python[cite: 7].</p>
-            </li>
-        </ul>
-    </div>
+<header>
+    <h1>Léo Guillez</h1>
+    <p>Étudiant en Informatique - Nantes Université</p>
+</header>
 
-    <div class="section">
-        <h2>🛠️ Projets Personnels</h2>
-        <ul>
-            <li>
-                <strong>Tower Defense</strong> <span class="tag">C++</span>
-                <p>Apprentissage autodidacte du C++ à travers la création d'un jeu de type Tower Defense[cite: 2].</p>
-            </li>
-            <li>
-                <strong>Veille Technologique</strong>
-                <p>Exploration curieuse de multiples langages de programmation pour enrichir ma culture technique[cite: 2].</p>
-            </li>
-        </ul>
-    </div>
+<section>
+    <h2>À propos</h2>
+    <p>Actuellement en BUT Informatique, je m'intéresse particulièrement au développement logiciel et aux applications mobiles. Mon objectif est d'intégrer une <strong>école d'ingénieur</strong> pour me spécialiser en programmation orientée objet, notamment avec <strong>Kotlin</strong>.</p>
+</section>
 
-    <div class="section">
-        <h2>🎯 Objectifs Professionnels</h2>
-        <p>Mon projet est d'intégrer une <strong>école d'ingénieur</strong> pour approfondir mes connaissances[cite: 8].</p>
-        <p>Je souhaite me spécialiser dans les langages orientés objet comme <strong>Kotlin</strong> pour le développement d'applications Android et de logiciels[cite: 3, 4].</p>
-        <p>J'ambitionne de travailler dans les secteurs du <strong>logiciel</strong>, de l'<strong>application mobile</strong> ou du <strong>jeu vidéo</strong>[cite: 10]. Bien que les secteurs du web et de la cybersécurité m'intéressent moins, ils restent des options viables pour mon futur parcours[cite: 10, 11].</p>
-    </div>
+<section>
+    <h2>Projets Scolaires</h2>
+    <ul class="project-list">
+        <li class="project-item"><span class="tag">Go</span> <strong>Simulation de particules</strong> : Développement d'un moteur de simulation.</li>
+        <li class="project-item"><span class="tag">Python</span> <strong>Jeu de la vie</strong> : Implémentation de l'automate cellulaire de Conway.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projets Personnels</h2>
+    <ul class="project-list">
+        <li class="project-item"><span class="tag">C++</span> <strong>Tower Defense</strong> : Création d'un jeu de stratégie en autodidacte pour apprendre le C++.</li>
+        <li class="project-item">Découverte de plusieurs langages par curiosité technique.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Mon Projet Professionnel</h2>
+    <p>Je souhaite m'orienter vers les secteurs du <strong>logiciel</strong>, des <strong>applications mobiles</strong> ou du <strong>jeu vidéo</strong>. Bien que je reste ouvert au web et à la cybersécurité, ma priorité reste le développement applicatif.</p>
+</section>
+
 </body>
 </html>
