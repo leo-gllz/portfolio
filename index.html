@@ -3,48 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Léo Guillez</title>
+    <title>Portfolio | Léo Guillez</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #f4f4f4; }
-        header { background: #2c3e50; color: white; padding: 20px; text-align: center; border-radius: 8px; }
-        section { background: white; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }
-        .tag { background: #e74c3c; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.9em; margin-right: 5px; }
-        .project-list { list-style: none; padding: 0; }
-        .project-item { margin-bottom: 15px; }
+        :root {
+            --bg-dark: #0f0c29;
+            --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --accent-orange: #ff9f43;
+            --accent-yellow: #feca57;
+            --text-light: #f5f6fa;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 159, 67, 0.3);
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; color: var(--accent-yellow); font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; }
+        h2 { color: var(--accent-orange); border-left: 4px solid var(--accent-orange); padding-left: 15px; margin-top: 40px; }
+
+        section {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .project-card {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border-bottom: 3px solid var(--accent-yellow);
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: var(--bg-dark);
+            font-weight: bold;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        strong { color: var(--accent-yellow); }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Léo Guillez</h1>
-    <p>Étudiant en Informatique - Nantes Université</p>
+    <p>Étudiant en BUT Informatique • Nantes Université</p>
 </header>
 
 <section>
-    <h2>À propos</h2>
-    <p>Actuellement en BUT Informatique, je m'intéresse particulièrement au développement logiciel et aux applications mobiles. Mon objectif est d'intégrer une <strong>école d'ingénieur</strong> pour me spécialiser en programmation orientée objet, notamment avec <strong>Kotlin</strong>.</p>
+    <h2>À propos de moi</h2>
+    <p>Passionné par le développement, j'ai pour objectif d'intégrer une <strong>école d'ingénieur</strong> pour approfondir mes connaissances en programmation orientée objet, notamment avec <strong>Kotlin</strong>.</p>
 </section>
 
 <section>
     <h2>Projets Scolaires</h2>
-    <ul class="project-list">
-        <li class="project-item"><span class="tag">Go</span> <strong>Simulation de particules</strong> : Développement d'un moteur de simulation.</li>
-        <li class="project-item"><span class="tag">Python</span> <strong>Jeu de la vie</strong> : Implémentation de l'automate cellulaire de Conway.</li>
-    </ul>
+    <div class="project-grid">
+        <div class="project-card">
+            <span class="tag">GO</span>
+            <h3>Simulation de particules</h3>
+            <p>Conception d'un moteur de particules performant dans le cadre de ma formation.</p>
+        </div>
+        <div class="project-card">
+            <span class="tag">PYTHON</span>
+            <h3>Jeu de la vie</h3>
+            <p>Implémentation de l'automate de Conway pour explorer les algorithmes complexes.</p>
+        </div>
+    </div>
 </section>
 
 <section>
-    <h2>Projets Personnels</h2>
-    <ul class="project-list">
-        <li class="project-item"><span class="tag">C++</span> <strong>Tower Defense</strong> : Création d'un jeu de stratégie en autodidacte pour apprendre le C++.</li>
-        <li class="project-item">Découverte de plusieurs langages par curiosité technique.</li>
-    </ul>
+    <h2>Expérimentations Personnelles</h2>
+    <div class="project-card">
+        <span class="tag">C++</span>
+        <h3>Tower Defense</h3>
+        <p>Développement d'un jeu de stratégie complet en autodidacte pour maîtriser le <strong>C++</strong>.</p>
+    </div>
 </section>
 
 <section>
-    <h2>Mon Projet Professionnel</h2>
-    <p>Je souhaite m'orienter vers les secteurs du <strong>logiciel</strong>, des <strong>applications mobiles</strong> ou du <strong>jeu vidéo</strong>. Bien que je reste ouvert au web et à la cybersécurité, ma priorité reste le développement applicatif.</p>
+    <h2>Avenir Professionnel</h2>
+    <p>Mon projet se tourne vers le <strong>développement logiciel</strong>, les <strong>applications mobiles</strong> et l'univers du <strong>jeu vidéo</strong>. Je reste curieux de toutes les opportunités technologiques qui s'offriront à moi durant mon parcours.</p>
 </section>
 
 </body>
