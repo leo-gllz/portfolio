@@ -94,18 +94,20 @@
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            flex-wrap: wrap; /* Force les boutons à aller à la ligne si besoin */
+            gap: 15px;       /* Un peu moins d'espace pour gagner de la place */
             margin-top: 15px;
         }
-
+        
         .social-links a {
             color: var(--accent-yellow);
             text-decoration: none;
             font-weight: bold;
-            padding: 8px 15px;
+            padding: 10px 15px; /* Plus confortable pour le clic au doigt */
             border: 1px solid var(--accent-yellow);
             border-radius: 5px;
             transition: all 0.3s ease;
+            white-space: nowrap; /* Empêche le texte de se couper en deux */
         }
 
         .social-links a:hover {
