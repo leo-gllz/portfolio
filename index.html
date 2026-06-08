@@ -407,7 +407,7 @@
     .hero-scroll-hint {
       position: absolute;
       bottom: 2rem;
-      left: 50%;
+      left: 75%;
       transform: translateX(-50%);
       display: flex;
       flex-direction: column;
@@ -927,20 +927,17 @@
           <span class="accent">Guillez</span>
         </h1>
 
-        <!-- ─── TON TITRE — modifie ici ─── -->
-        <p class="hero-role">// Étudiant BUT Informatique &middot; Dev Logiciel &amp; Applications</p>
-
-        <!-- ─── TA BIO COURTE — modifie ici ─── -->
+<!-- ─── TA BIO COURTE — modifie ici ─── -->
         <p class="hero-bio">
-          19 ans, en première année de BUT Informatique à Nantes.
-          J'aime les problèmes qui font vraiment réfléchir — là où il faut
-          trouver une solution élégante plutôt que la première qui vient.
+          Étudiant de 19 ans en BUT Informatique à Nantes. Passionné par la résolution 
+          de problèmes complexes, je cherche toujours à concevoir des solutions élégantes 
+          et durables plutôt que de m'arrêter à la première idée venue.
         </p>
 
         <!-- Boutons d'action -->
         <div class="hero-btns">
           <a href="#projects" class="btn btn-primary">Voir mes projets ↓</a>
-          <a href="#contact"  class="btn btn-ghost">Me contacter</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
         </div>
 
       </div>
@@ -976,14 +973,15 @@
 
           <!-- ─── MODIFIE CES PARAGRAPHES ─── -->
           <p style="color:var(--text-2); margin-bottom:1rem; line-height:1.9;">
-            Je m'appelle Léo, j'ai 19 ans et je suis en première année de BUT Informatique à l'IUT de Nantes.
-            Ce qui m'attire dans l'informatique, ce n'est pas juste le code — c'est la logique derrière,
-            la satisfaction de décomposer un problème complexe et de trouver la solution qui tient vraiment la route.
+            Moi, c'est Léo. J'ai 19 ans et je suis actuellement en première année de BUT Informatique à l'IUT de Nantes. 
+            Au-delà de la simple écriture de lignes de code, c'est la rigueur logique qui me passionne : 
+            j'aime analyser un problème complexe, le décomposer et concevoir une architecture logicielle robuste et fiable.
           </p>
           <p style="color:var(--text-2); line-height:1.9;">
-            Je m'intéresse particulièrement au développement logiciel et applicatif — le genre de projets
-            où il faut vraiment réfléchir à l'architecture, à la structure, à la façon dont les pièces
-            s'emboîtent. J'apprends en faisant : cours, projets perso, tout est bon pour progresser.
+            Je me tourne naturellement vers le développement logiciel et applicatif, un domaine où la réflexion sur la 
+            structure et l'imbrication des composants est primordiale. Porté par une forte culture du "learning by doing", 
+            je saisis chaque opportunité — qu'il s'agisse des projets universitaires ou de mes défis personnels — pour 
+            continuer à progresser.
           </p>
 
           <!-- Statistiques — modifie data-count et le label -->
@@ -1114,7 +1112,7 @@
             <!-- ─── modifie titre, description, tags, liens ─── -->
             <h3 class="proj-title">Simulateur de particules</h3>
             <p class="proj-desc">
-              Projet de fin de semestre en binôme. Objectif : partir d'un unique carré blanc imobile pour arriver à un simulateur complet a options multiples. Découverte de Ebiten et approfondissement des connaissance en Golang et en POO.
+              Projet de fin de semestre en binôme. Objectif : partir d'un unique carré blanc immobile pour arriver à un simulateur complet à options multiples. Découverte d'Ebiten et approfondissement des connaissances en Golang et en POO.
             </p>
             <div class="proj-tags">
               <span class="proj-tag">Golang</span>
@@ -1136,7 +1134,7 @@
             <div class="proj-meta">// Projet &middot; 2023–2024</div>
             <h3 class="proj-title">Conway's Game of Life</h3>
             <p class="proj-desc">
-              A faire
+              Projet de NSI en Première au Lycée. Objectif : essayer de reproduire le Jeu de la Vie de Conway en Python. Apprendre à coder en Python avec et sans bibliothèques optimisées pour le Jeu de la Vie et introduction à l'utilisation des matrices de données.
             </p>
             <div class="proj-tags">
               <span class="proj-tag">Python</span>
@@ -1144,8 +1142,8 @@
               <span class="proj-tag">Projet Lycée</span>
             </div>
             <div class="proj-links">
-              <a href="#" class="proj-link">↗ Demo</a>
-              <a href="#" class="proj-link">⌥ GitHub</a>
+              <a href="#" class="proj-link">↗ Demo (a venir)</a>
+              <a href="#" class="proj-link">⌥ GitHub (en cours de création)</a>
             </div>
           </div>
         </div>
@@ -1159,16 +1157,17 @@
             <div class="proj-meta">// Projet &middot; 2026</div>
             <h3 class="proj-title">Mini Projet : App Meteo</h3>
             <p class="proj-desc">
-              A faire
+              Projet personnel. Objectif : essayer de créer une application de météo. Découvrir le développement d'application Android en Kotlin et commencer à apprendre à utiliser des API.
             </p>
             <div class="proj-tags">
               <span class="proj-tag">Kotlin</span>
               <span class="proj-tag">Structures de données</span>
               <span class="proj-tag">POO</span>
               <span class="proj-tag">Call API</span>
+              <span class="proj-tag">Projet Perso</span>
             </div>
             <div class="proj-links">
-              <a href="#" class="proj-link">⌥ GitHub</a>
+              <a href="#" class="proj-link">⌥ GitHub (en cours de création)</a>
             </div>
           </div>
         </div>
@@ -1227,6 +1226,12 @@
             <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.42-4.03-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
             GitHub
           </a>
+          
+          <a href="https://linkedin.com/in/léo-guillez-1559b739b" class="social-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73C5.5 6.73 4.75 6 4.75 5.04S5.5 3.36 6.5 3.36s1.75.72 1.75 1.68S7.5 6.73 6.5 6.73zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.41 20 7.22 20 12.48V19z"/></svg>
+            LinkedIn
+          </a>
+
 
           <!--
           ─── AJOUTE D'AUTRES RÉSEAUX ─── (décommente et modifie)
@@ -1344,12 +1349,12 @@
         const el     = entry.target;
         const target = parseInt(el.dataset.count, 10);
         let val = 0;
-        const step = Math.max(1, Math.ceil(target / 40));
+        const step = Math.max(1, Math.ceil(target / 100));
         const tick = setInterval(() => {
           val = Math.min(val + step, target);
           el.textContent = val + '+';
           if (val >= target) clearInterval(tick);
-        }, 38);
+        }, 100);
         cntObs.unobserve(el);
       });
     }, { threshold: 0.5 });
